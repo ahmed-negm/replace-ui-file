@@ -1,0 +1,19 @@
+{
+  "name": "replace-ui-file",
+  "version": "1.2.0",
+  "description": "Sample plug-in skeleton to extend hivepod functionality to replace any UI file",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "hivepod",
+    "plugin"
+  ],
+  "author": "Icinetic <anegm@icinetic.com> (http://icinetic.com)",
+  "license": "ISC",
+  "dependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.3.4"
+  }
+}
