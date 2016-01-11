@@ -13,7 +13,8 @@ pluginManager.register([
         name: 'replace-ui-file', 
         options:
         {
-            '/i18n/literals.en-US.json': '/i18n/literals.es-ES.json' //Replace the English translation with the Spanish translation
+            //Replace the English translation with the Spanish translation
+            '/i18n/literals.en-US.json': '/i18n/literals.es-ES.json'
         }
     }
 ]);	
