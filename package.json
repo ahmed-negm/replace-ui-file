@@ -1,6 +1,6 @@
 {
   "name": "replace-ui-file",
-  "version": "1.2.3",
+  "version": "1.3.0",
   "description": "Sample plug-in skeleton to extend hivepod functionality to replace any UI file",
   "main": "index.js",
   "scripts": {
