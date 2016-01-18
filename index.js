@@ -2,21 +2,14 @@
 // Sample plug-in skeleton to extend hivepod functionality.
 // using this plugin you could replace any file in the UI:
 /*
-	configure,
     extendExpress
 */
  
- var _options;
- 
- function configure(configuration, options) {	
-    _options = options;
-}
-
-function extendExpress(app) {
-    for (var property in _options) {
-        if (_options.hasOwnProperty(property)) {
+function extendExpress(app, options) {
+    for (var property in options) {
+        if (options.hasOwnProperty(property)) {
             app.get(property, function (req, res) {
-                res.redirect(_options[req.url]);
+                res.redirect(options[req.url]);
             });
         }
     }
@@ -29,6 +22,5 @@ module.exports = {
 	author: 'icinetic',
 
 	//interface ---
-    configure: configure,	
 	extendExpress : extendExpress
 };
