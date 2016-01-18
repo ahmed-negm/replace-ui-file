@@ -22,8 +22,7 @@ describe('Plugin', function() {
     };
     
     it('extendExpress should replace the file based on options', function(done) {
-        plugin.configure(null, options);
-        plugin.extendExpress(appMock);
+        plugin.extendExpress(appMock, options);
         
         for (var property in options) {
             if (options.hasOwnProperty(property)) {
